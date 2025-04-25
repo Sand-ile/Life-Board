@@ -1,27 +1,29 @@
-import mongoose from 'mongoose';
-const { Schema } = mongoose;
+import { Schema } from "mongoose";
+import mongoose from "mongoose";
 
-const userSchema = new Schema({
- displayName:{
-  type: String,
-  required: tru[true, "Please enter name"]
- },
- username:{
-  type: String,
-  required:[true, "Please enter username"]
- },
- email:{
-  type: String,
-  required: [true, "Please enter email"]
- },
- img:{
-  type: String,
- },
- hashedpassword:{
-  type: String,
-  required:[true, "Please enter password"]
- }
-}, {timestamps: true}
+const userSchema = new Schema(
+  {
+    displayName: {
+      type: String,
+      required: true,
+    },
+    username: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    img: {
+      type: String,
+    },
+    hashedPassword: {
+      type: String,
+      required: true,
+    }
+  },
+  { timestamps: true }
 );
 
-export default mongoose.model("User", userSchema )
+export default mongoose.model("User",userSchema)

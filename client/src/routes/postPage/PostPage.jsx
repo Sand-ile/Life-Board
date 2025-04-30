@@ -1,5 +1,5 @@
 import './postPage.css'
-import Image from '../../components/image/image'
+import Image from '../../components/image/Image'
 import PostInteractions from '../../components/postInteractions/postInteractions'
 import { Link, useParams } from 'react-router'
 import Comments from '../../components/comments/comments'
@@ -35,7 +35,7 @@ const PostPage = () => {
           <Image src={data.media} alt='' w={736} />
         </div>
         <div className='postDetails'>
-          <PostInteractions postId={id} />
+          <PostInteractions />
           <Link to={`/${data.user.username}`} className='postUser'>
             <Image src={data.user.img || '/general/noAvatar.png'} />
             <span>{data.user.displayName}</span>

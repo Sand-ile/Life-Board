@@ -11,7 +11,6 @@ const TopBar = () => {
 
     navigate(`/search?search=${e.target[0].value}`)
   }
-
   return (
     <div className='topBar'>
       {/* search */}

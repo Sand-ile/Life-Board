@@ -1,9 +1,9 @@
 import './postPage.css'
-import Image from '../../components/image/Image'
+import Image from '../../components/image/image'
 import PostInteractions from '../../components/postInteractions/postInteractions'
 import { Link, useParams } from 'react-router'
-import Comments from '../../components/comments/comments'
 import { useQuery } from '@tanstack/react-query'
+import Comments from '../../components/comments/Comments'
 import apiRequest from '../../utils/apiRequest'
 
 const PostPage = () => {

@@ -7,7 +7,9 @@ const SearchPage = () => {
 
   const search = searchParams.get('search')
 
-  return <Gallery search={search} />
+  const boardId = searchParams.get('boardId')
+
+  return <Gallery search={search} boardId={boardId} />
 }
 
 export default SearchPage

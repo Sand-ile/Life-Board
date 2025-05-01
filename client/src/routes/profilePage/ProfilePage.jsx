@@ -1,6 +1,6 @@
 import './profilePage.css'
-import Image from '../../components/image/Image'
 import { useState } from 'react'
+import Image from '../../components/image/image.jsx'
 import Gallery from '../../components/gallery/Gallery'
 import Boards from '../../components/boards/Boards.jsx'
 import { useQuery } from '@tanstack/react-query'

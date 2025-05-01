@@ -13,7 +13,7 @@ export const getUserBoards = async (req, res)=> {
    const firstPin = await Pin.findOne({board: board._id})
 
    return {
-    ...board,
+    ...board.toObject(),
     pinCount,
     firstPin
    }
